@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".UI.TutorialActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UI.GridActivity"
+            android:exported="false" />
+        <activity
             android:name=".UI.HomeActivity"
             android:exported="true">
             <intent-filter>
