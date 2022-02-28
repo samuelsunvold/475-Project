@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/intro_background"
+    tools:context=".UI.WinnerActivity">
+
+    <TextView
+        android:id="@+id/winningPlayerIDText"
+        android:layout_width="578dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="96dp"
+        android:fontFamily="@font/black_ops_one"
+        android:shadowColor="#F8F5F5"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="5"
+        android:text="PLAYER #"
+        android:textAlignment="center"
+        android:textColor="#AF803A"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:flow_horizontalAlign="center"
+        app:flow_verticalAlign="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playerIcon" />
+
+    <TextView
+        android:id="@+id/winnerHeaderText"
+        android:layout_width="578dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="220dp"
+        android:fontFamily="@font/black_ops_one"
+        android:shadowColor="#F8F5F5"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="5"
+        android:text="THE WINNER IS"
+        android:textAlignment="center"
+        android:textColor="#AF803A"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:flow_horizontalAlign="center"
+        app:flow_verticalAlign="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/playerIcon"
+        android:layout_width="276dp"
+        android:layout_height="256dp"
+        android:layout_marginTop="96dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/winnerHeaderText"
+        tools:srcCompat="@tools:sample/avatars" />
+</androidx.constraintlayout.widget.ConstraintLayout>
