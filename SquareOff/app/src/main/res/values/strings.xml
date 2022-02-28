@@ -6,4 +6,5 @@
     <string name="game_intro3">A player who completes the fourth side of a 1 x1 box earns one point and takes another turn. (The points are typically recorded by placing in the box an identifying mark of the player, such as an initial). The game ends when no more lines can be placed. The winner of the game is the player with the most points. The board may be of any size, but we only have 3x3, 4x4, and 6x6.</string>
     <string name="square_off">Square Off !!</string>
     <string name="todo">TODO</string>
+    <string name="winner_header_text">THE WINNER IS</string>
 </resources>
