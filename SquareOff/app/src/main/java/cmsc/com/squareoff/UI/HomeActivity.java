@@ -19,7 +19,7 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        // this will take you to the tutorial screen
+        // This will take you to the tutorial screen
         tutorialButton = (ImageView) findViewById(R.id.tutorial_button);
         tutorialButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -29,7 +29,7 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
-        // this will take you to the grid screen
+        // This will take you to the grid screen
         startButton = (ImageView) findViewById(R.id.start_button);
         startButton.setOnClickListener(new View.OnClickListener() {
             @Override
