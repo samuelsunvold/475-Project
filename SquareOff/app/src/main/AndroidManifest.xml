@@ -13,6 +13,9 @@
             android:name=".UI.WinnerActivity"
             android:exported="false" />
         <activity
+            android:name=".UI.SelectPlayersActivity"
+            android:exported="false" />
+        <activity
             android:name=".UI.TutorialActivity"
             android:exported="false" />
         <activity

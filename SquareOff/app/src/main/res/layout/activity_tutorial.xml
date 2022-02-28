@@ -18,7 +18,7 @@
         android:shadowDy="5"
         android:shadowRadius="5"
         android:text="@string/rules_and_information"
-        android:textColor="#9F1F1F"
+        android:textColor="#2196F3"
         android:textSize="45sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.432"
