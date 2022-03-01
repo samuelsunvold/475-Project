@@ -6,14 +6,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import cmsc.com.squareoff.R;
 
 public class GridActivity extends AppCompatActivity {
 
-    Button threeByThree;
-    Button fourByFour;
-    Button fiveByFive;
+    ImageView threeByThree;
+    ImageView fourByFour;
+    ImageView fiveByFive;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +22,7 @@ public class GridActivity extends AppCompatActivity {
         setContentView(R.layout.activity_grid);
 
         // this will take to the selectPlayers
-        threeByThree = findViewById(R.id.btn33);
+        threeByThree = (ImageView) findViewById(R.id.btn33);
         threeByThree.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -34,7 +35,7 @@ public class GridActivity extends AppCompatActivity {
 
         // THIS WILL ALSO TAKE TO SELECT PLAYERS SCREEN
 
-        fourByFour = findViewById(R.id.btn44);
+        fourByFour = (ImageView) findViewById(R.id.btn44);
         fourByFour.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -44,7 +45,7 @@ public class GridActivity extends AppCompatActivity {
         });
 
         // this will take take to 
-        fiveByFive = findViewById(R.id.btn55);
+        fiveByFive = (ImageView) findViewById(R.id.btn55);
         fiveByFive.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
