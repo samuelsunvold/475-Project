@@ -17,7 +17,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lottieAnimationView1"
         app:layout_constraintVertical_bias="0.214"
-        app:srcCompat="@drawable/home_btn" />
+        app:srcCompat="@drawable/home_btn"
+        android:contentDescription="TODO" />
 
     <TextView
         android:id="@+id/winningPlayerIDText"
@@ -66,7 +67,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/superHero1"
         android:layout_width="157dp"
         android:layout_height="158dp"
         android:layout_marginStart="8dp"
@@ -76,7 +77,8 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/winner_header_text"
-        app:srcCompat="@drawable/superhero_3" />
+        app:srcCompat="@drawable/superhero_3"
+        android:contentDescription="TODO" />
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/lottieAnimationView1"
