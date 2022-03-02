@@ -11,7 +11,7 @@ import cmsc.com.squareoff.R;
 
 public class SelectPlayersActivity extends AppCompatActivity {
 
-    private Button dummyButton;
+    Button dummyButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

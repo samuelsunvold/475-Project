@@ -7,4 +7,7 @@
     <string name="square_off">Square Off !!</string>
     <string name="todo">TODO</string>
     <string name="winner_header_text">THE WINNER IS</string>
+    <string name="button5x5">Button5x5</string>
+    <string name="button3x3">Button3x3</string>
+    <string name="button4x4">Button4x4</string>
 </resources>
