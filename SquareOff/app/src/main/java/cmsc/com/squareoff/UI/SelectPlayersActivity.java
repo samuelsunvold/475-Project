@@ -23,7 +23,7 @@ public class SelectPlayersActivity extends AppCompatActivity {
 
     // Method here just to bring you to Winner screen. Will be deleted later.
     public void dummyButtonOnClickListener(View view) {
-        Intent winnerScreen = new Intent(this, WinnerActivity.class);
+        Intent winnerScreen = new Intent(this, so3x3.class);
         startActivity(winnerScreen);
     }
 }
