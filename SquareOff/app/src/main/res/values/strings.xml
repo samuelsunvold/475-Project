@@ -10,4 +10,9 @@
     <string name="button5x5">Button5x5</string>
     <string name="button3x3">Button3x3</string>
     <string name="button4x4">Button4x4</string>
+    <string name="select_your_players">SELECT YOUR PLAYERS</string>
+    <string name="player_2_nameInput">Player 2</string>
+    <string name="playGameBtn">play</string>
+    <string name="player_1_nameInput">Player 1</string>
+    <string name="playericon">playerIcon</string>
 </resources>
