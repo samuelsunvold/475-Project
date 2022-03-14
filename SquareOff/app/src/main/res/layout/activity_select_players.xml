@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     tools:context=".UI.SelectPlayersActivity">
 
 
@@ -11,12 +12,12 @@
         android:id="@+id/tvSuggestion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="92dp"
+        android:layout_marginTop="32dp"
         android:fontFamily="@font/black_ops_one"
         android:gravity="center"
-        android:text=" SELECT YOUR PLAYERS"
-        android:textColor="#033035"
-        android:textSize="45dp"
+        android:text="@string/select_your_players"
+        android:textColor="#365E70"
+        android:textSize="45sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,32 +25,226 @@
 
     <Button
         android:id="@+id/dummyButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="62dp"
+        android:layout_width="182dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="16dp"
         android:onClick="dummyButtonOnClickListener"
-        android:text="Take to Winner Screen"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        android:text="Take to Winner "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/playBtn"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/player1"
+        android:layout_width="139dp"
+        android:layout_height="132dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:contentDescription="@string/playericon"
+        android:src="@drawable/team6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvSuggestion" />
 
-    <GridView
-        android:id="@+id/gridview"
-        android:layout_width="match_parent"
-        android:layout_height="367dp"
-        android:layout_marginTop="50dp"
-        android:background="@android:color/transparent"
-        android:columnWidth="45dp"
-        android:numColumns="3"
-        android:padding="12dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <ImageView
+        android:id="@+id/player2"
+        android:layout_width="139dp"
+        android:layout_height="132dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/playericon"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/player1"
+        app:layout_constraintTop_toBottomOf="@+id/tvSuggestion"
+        app:srcCompat="@drawable/team2" />
+
+    <EditText
+        android:id="@+id/playerName1"
+        android:layout_width="138dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="17dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/player_2_nameInput"
+        android:inputType="textPersonName"
+        android:textColorHint="#546E7A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/playerName2"
+        app:layout_constraintTop_toBottomOf="@+id/player2" />
+
+    <EditText
+        android:id="@+id/playerName2"
+        android:layout_width="138dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/player_1_nameInput"
+        android:inputType="textPersonName"
+        android:textColorHint="#546E7A"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dummyButton" />
+        app:layout_constraintTop_toBottomOf="@+id/player1" />
 
+    <Button
+        android:id="@+id/playBtn"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/playGameBtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
+    <ImageButton
+        android:id="@+id/team1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="324dp"
+        android:layout_marginBottom="236dp"
+        android:background="#BE0B237C"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/dummyButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/team1" />
 
+    <ImageButton
+        android:id="@+id/team2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="228dp"
+        android:layout_marginBottom="236dp"
+        android:scaleType="fitXY"
+        android:background="#BE0B237C"
+        app:layout_constraintBottom_toTopOf="@+id/dummyButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/team2" />
+
+    <ImageButton
+        android:id="@+id/team3"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginBottom="236dp"
+        android:background="#BE7C120B"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/dummyButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/team3" />
+
+    <ImageButton
+        android:id="@+id/team4"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="236dp"
+        android:background="#BE7C120B"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/dummyButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/team4" />
+
+    <ImageButton
+        android:id="@+id/team5"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="324dp"
+        android:layout_marginBottom="144dp"
+        android:scaleType="fitXY"
+        android:background="#BE0B237C"
+        app:layout_constraintBottom_toTopOf="@+id/dummyButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/team5" />
+
+    <ImageButton
+        android:id="@+id/team6"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="228dp"
+        android:layout_marginBottom="144dp"
+        android:scaleType="fitXY"
+        android:background="#BE0B237C"
+        app:layout_constraintBottom_toTopOf="@+id/dummyButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/team6" />
+
+    <ImageButton
+        android:id="@+id/team7"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginBottom="144dp"
+        android:background="#BE7C120B"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/dummyButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/team7" />
+
+    <ImageButton
+        android:id="@+id/team8"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="144dp"
+        android:background="#BE7C120B"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/dummyButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/team8" />
+
+    <ImageButton
+        android:id="@+id/team9"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="48dp"
+        android:background="#BE7C120B"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/dummyButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/team9" />
+
+    <ImageButton
+        android:id="@+id/team10"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="324dp"
+        android:layout_marginBottom="48dp"
+        android:scaleType="fitXY"
+        android:background="#BE0B237C"
+        app:layout_constraintBottom_toTopOf="@+id/dummyButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/team10" />
+
+    <ImageButton
+        android:id="@+id/team11"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="228dp"
+        android:layout_marginBottom="48dp"
+        android:scaleType="fitXY"
+        android:background="#BE0B237C"
+        app:layout_constraintBottom_toTopOf="@+id/dummyButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/team11" />
+
+    <ImageButton
+        android:id="@+id/team12"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginBottom="48dp"
+        android:background="#BE7C120B"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/dummyButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/team12" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
