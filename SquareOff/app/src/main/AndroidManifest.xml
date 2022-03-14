@@ -16,6 +16,9 @@
             android:name=".UI.SelectPlayersActivity"
             android:exported="false" />
         <activity
+            android:name=".UI.so3x3"
+            android:exported="false" />
+        <activity
             android:name=".UI.TutorialActivity"
             android:exported="false" />
         <activity
