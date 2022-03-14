@@ -15,4 +15,5 @@
     <string name="playGameBtn">play</string>
     <string name="player_1_nameInput">Player 1</string>
     <string name="playericon">playerIcon</string>
+    <string name="team1" />
 </resources>
