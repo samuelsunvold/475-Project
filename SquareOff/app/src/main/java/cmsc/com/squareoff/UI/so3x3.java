@@ -1,6 +1,5 @@
 package cmsc.com.squareoff.UI;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -45,30 +44,30 @@ public class so3x3 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.so3x3);
 
-        button1 = findViewById(R.id.button);
-        button2 = findViewById(R.id.button5);
-        button3 = findViewById(R.id.button8);
-        button4 = findViewById(R.id.button3);
-        button5 = findViewById(R.id.button4);
-        button6 = findViewById(R.id.button7);
-        button7 = findViewById(R.id.button10);
-        button8 = findViewById(R.id.button2);
-        button9 = findViewById(R.id.button6);
-        button10 = findViewById(R.id.button9);
-        button11 = findViewById(R.id.button13);
-        button12 = findViewById(R.id.button12);
-        button13 = findViewById(R.id.button11);
-        button14 = findViewById(R.id.button14);
-        button15 = findViewById(R.id.button17);
-        button16 = findViewById(R.id.button16);
-        button17 = findViewById(R.id.button15);
-        button18 = findViewById(R.id.button21);
-        button19 = findViewById(R.id.button20);
-        button20 = findViewById(R.id.button19);
-        button21 = findViewById(R.id.button18);
-        button22 = findViewById(R.id.button24);
-        button23 = findViewById(R.id.button23);
-        button24 = findViewById(R.id.button22);
+        button1 = findViewById(R.id.b0);
+        button2 = findViewById(R.id.b1);
+        button3 = findViewById(R.id.b2);
+        button4 = findViewById(R.id.b3);
+        button5 = findViewById(R.id.b4);
+        button6 = findViewById(R.id.b5);
+        button7 = findViewById(R.id.b6);
+        button8 = findViewById(R.id.b7);
+        button9 = findViewById(R.id.b8);
+        button10 = findViewById(R.id.b9);
+        button11 = findViewById(R.id.b10);
+        button12 = findViewById(R.id.b11);
+        button13 = findViewById(R.id.b12);
+        button14 = findViewById(R.id.b13);
+        button15 = findViewById(R.id.b14);
+        button16 = findViewById(R.id.b15);
+        button17 = findViewById(R.id.b16);
+        button18 = findViewById(R.id.b17);
+        button19 = findViewById(R.id.b18);
+        button20 = findViewById(R.id.b19);
+        button21 = findViewById(R.id.b20);
+        button22 = findViewById(R.id.b21);
+        button23 = findViewById(R.id.b22);
+        button24 = findViewById(R.id.b23);
 
         Button[] buttons = new Button[]{button1, button2, button3, button4, button5, button6, button7, button8, button9,
                 button10, button11, button12, button13, button14, button15, button16, button17, button18, button19,
