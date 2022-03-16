@@ -68,17 +68,17 @@
 
     <ImageView
         android:id="@+id/superHero1"
-        android:layout_width="157dp"
-        android:layout_height="158dp"
+        android:layout_width="144dp"
+        android:layout_height="144dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="84dp"
         android:layout_marginEnd="8dp"
+        android:contentDescription="TODO"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/winner_header_text"
-        app:srcCompat="@drawable/superhero_3"
-        android:contentDescription="TODO" />
+        app:srcCompat="@drawable/team2" />
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/lottieAnimationView1"

@@ -29,7 +29,7 @@ public class SelectPlayersActivity extends AppCompatActivity {
 
         dummyButton = findViewById(R.id.dummyButton);
 
-        gridView = findViewById(R.id.gridView);
+        gridView = findViewById(R.id.gridview);
         CustomAdapter customAdapter = new CustomAdapter(images,this);
         gridView.setAdapter(customAdapter);
     }
@@ -38,7 +38,7 @@ public class SelectPlayersActivity extends AppCompatActivity {
 
     // Method here just to bring you to Winner screen. Will be deleted later.
     public void dummyButtonOnClickListener(View view) {
-        Intent winnerScreen = new Intent(this, so3x3.class);
+        Intent winnerScreen = new Intent(this, WinnerActivity.class);
         startActivity(winnerScreen);
     }
 }
