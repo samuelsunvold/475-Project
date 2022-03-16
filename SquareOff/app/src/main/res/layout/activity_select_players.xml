@@ -28,13 +28,15 @@
         android:layout_width="182dp"
         android:layout_height="48dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="33dp"
         android:layout_marginBottom="16dp"
         android:onClick="dummyButtonOnClickListener"
         android:text="Take to Winner "
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/playBtn"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridview" />
 
     <ImageView
         android:id="@+id/player1"
@@ -97,154 +99,27 @@
         android:id="@+id/playBtn"
         android:layout_width="180dp"
         android:layout_height="48dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="16dp"
         android:text="@string/playGameBtn"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <ImageButton
-        android:id="@+id/team1"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginEnd="324dp"
-        android:layout_marginBottom="236dp"
-        android:background="#BE0B237C"
-        android:scaleType="fitXY"
-        app:layout_constraintBottom_toTopOf="@+id/dummyButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/team1" />
+        app:layout_constraintTop_toBottomOf="@+id/gridview" />
 
-    <ImageButton
-        android:id="@+id/team2"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginEnd="228dp"
-        android:layout_marginBottom="236dp"
-        android:scaleType="fitXY"
-        android:background="#BE0B237C"
-        app:layout_constraintBottom_toTopOf="@+id/dummyButton"
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="413dp"
+        android:layout_height="315dp"
+        android:layout_marginTop="3dp"
+        android:background="@android:color/transparent"
+        android:columnWidth="45dp"
+        android:numColumns="3"
+        android:padding="12dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/team2" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playerName1" />
 
-    <ImageButton
-        android:id="@+id/team3"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginEnd="116dp"
-        android:layout_marginBottom="236dp"
-        android:background="#BE7C120B"
-        android:scaleType="fitXY"
-        app:layout_constraintBottom_toTopOf="@+id/dummyButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/team3" />
-
-    <ImageButton
-        android:id="@+id/team4"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="236dp"
-        android:background="#BE7C120B"
-        android:scaleType="fitXY"
-        app:layout_constraintBottom_toTopOf="@+id/dummyButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/team4" />
-
-    <ImageButton
-        android:id="@+id/team5"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginEnd="324dp"
-        android:layout_marginBottom="144dp"
-        android:scaleType="fitXY"
-        android:background="#BE0B237C"
-        app:layout_constraintBottom_toTopOf="@+id/dummyButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/team5" />
-
-    <ImageButton
-        android:id="@+id/team6"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginEnd="228dp"
-        android:layout_marginBottom="144dp"
-        android:scaleType="fitXY"
-        android:background="#BE0B237C"
-        app:layout_constraintBottom_toTopOf="@+id/dummyButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/team6" />
-
-    <ImageButton
-        android:id="@+id/team7"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginEnd="116dp"
-        android:layout_marginBottom="144dp"
-        android:background="#BE7C120B"
-        android:scaleType="fitXY"
-        app:layout_constraintBottom_toTopOf="@+id/dummyButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/team7" />
-
-    <ImageButton
-        android:id="@+id/team8"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="144dp"
-        android:background="#BE7C120B"
-        android:scaleType="fitXY"
-        app:layout_constraintBottom_toTopOf="@+id/dummyButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/team8" />
-
-    <ImageButton
-        android:id="@+id/team9"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="48dp"
-        android:background="#BE7C120B"
-        android:scaleType="fitXY"
-        app:layout_constraintBottom_toTopOf="@+id/dummyButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/team9" />
-
-    <ImageButton
-        android:id="@+id/team10"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginEnd="324dp"
-        android:layout_marginBottom="48dp"
-        android:scaleType="fitXY"
-        android:background="#BE0B237C"
-        app:layout_constraintBottom_toTopOf="@+id/dummyButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/team10" />
-
-    <ImageButton
-        android:id="@+id/team11"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginEnd="228dp"
-        android:layout_marginBottom="48dp"
-        android:scaleType="fitXY"
-        android:background="#BE0B237C"
-        app:layout_constraintBottom_toTopOf="@+id/dummyButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/team11" />
-
-    <ImageButton
-        android:id="@+id/team12"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginEnd="116dp"
-        android:layout_marginBottom="48dp"
-        android:background="#BE7C120B"
-        android:scaleType="fitXY"
-        app:layout_constraintBottom_toTopOf="@+id/dummyButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/team12" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
