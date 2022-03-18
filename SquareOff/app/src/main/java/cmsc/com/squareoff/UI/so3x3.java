@@ -1,6 +1,8 @@
 package cmsc.com.squareoff.UI;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -44,6 +46,14 @@ public class so3x3 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_so3x3);
 
+        // Retrieve player names.
+        Intent players = getIntent();
+        String playerOne = players.getStringExtra("playerOneName");
+        String playerTwo = players.getStringExtra("playerTwoName");
+
+        Log.d("Player One", playerOne);
+        Log.d("Player Two", playerTwo);
+
         button1 = findViewById(R.id.b0);
         button2 = findViewById(R.id.b1);
         button3 = findViewById(R.id.b2);
@@ -75,29 +85,18 @@ public class so3x3 extends AppCompatActivity {
 
         ArrayList<Line> lines = new ArrayList<Line>();
 
-
         //when each button is clicked
         for(int i = 0; i < buttons.length; i++)
         {
             Line line = new Line(buttons[i]);
             lines.add(line);
-
         }
-
-
-
-
 
         //when square is completed (all the lines of square isClicked)
             //set CompleteBy to player who clicked
             //player score++
             //change color based on player number
             // check if all squares are made
-
-
-
-
-
     }
 
     public void makeLine(View view) {

@@ -64,7 +64,7 @@
         app:srcCompat="@drawable/team2" />
 
     <EditText
-        android:id="@+id/playerName1"
+        android:id="@+id/playerName2"
         android:layout_width="138dp"
         android:layout_height="48dp"
         android:layout_marginStart="102dp"
@@ -77,11 +77,11 @@
         android:inputType="textPersonName"
         android:textColorHint="#546E7A"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/playerName2"
+        app:layout_constraintStart_toEndOf="@+id/playerName1"
         app:layout_constraintTop_toBottomOf="@+id/player2" />
 
     <EditText
-        android:id="@+id/playerName2"
+        android:id="@+id/playerName1"
         android:layout_width="138dp"
         android:layout_height="48dp"
         android:layout_marginStart="16dp"
@@ -119,7 +119,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/playerName1" />
+        app:layout_constraintTop_toBottomOf="@+id/playerName2" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
