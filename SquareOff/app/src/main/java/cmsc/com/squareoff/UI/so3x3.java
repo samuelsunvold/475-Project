@@ -1,11 +1,14 @@
 package cmsc.com.squareoff.UI;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
@@ -39,12 +42,18 @@ public class so3x3 extends AppCompatActivity {
     Button button23;
     Button button24;
 
+    Player currentPlayer;
+    Player player1;
+    Player player2;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_so3x3);
+
+
 
         // Retrieve player names.
         Intent players = getIntent();
@@ -53,6 +62,11 @@ public class so3x3 extends AppCompatActivity {
 
         Log.d("Player One", playerOne);
         Log.d("Player Two", playerTwo);
+
+        player1 = new Player(playerOne, 1);
+        player2 = new Player(playerTwo, 2);
+
+        currentPlayer = player1;
 
         button1 = findViewById(R.id.b0);
         button2 = findViewById(R.id.b1);
@@ -92,6 +106,11 @@ public class so3x3 extends AppCompatActivity {
             lines.add(line);
         }
 
+
+        while(true)
+        {
+
+        }
         //when square is completed (all the lines of square isClicked)
             //set CompleteBy to player who clicked
             //player score++
@@ -102,6 +121,12 @@ public class so3x3 extends AppCompatActivity {
     public void makeLine(View view) {
         view.setEnabled(false);
 
+        if(currentPlayer.number == 1)
+        {
+            view.setBackgroundColor(Color.BLUE);
+            if ()
+            currentPlayer = player2;
+        }
 
     }
 }

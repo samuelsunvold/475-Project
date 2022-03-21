@@ -1,7 +1,9 @@
 package cmsc.com.squareoff.UI;
 
 
+import android.graphics.Color;
 import android.widget.Button;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -33,6 +35,7 @@ public class Line {
 
 class Square
 {
+    TextView square;
     Line[] squareLines;
     int completedBy;
     
@@ -41,7 +44,7 @@ class Square
         squareLines = lines;
     }
 
-    public boolean checkSquare()
+    public boolean checkSquare(Player p)
     {
         boolean squareComplete = true;
 
@@ -57,6 +60,24 @@ class Square
                 break;
             }
         }
-        return squareComplete;
+
+        if(squareComplete)
+        {
+            if(p.number == 1)
+            {
+                square.setBackgroundColor(Color.BLUE);
+                completedBy = 1;
+            }
+            else if(p.number == 2)
+            {
+                square.setBackgroundColor(Color.RED);
+                completedBy = 2;
+            }
+            return squareComplete;
+        }
+        else
+        {
+            return squareComplete;
+        }
     }
 }

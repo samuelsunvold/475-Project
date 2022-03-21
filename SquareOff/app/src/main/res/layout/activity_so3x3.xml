@@ -7,6 +7,14 @@
     android:textAlignment="center"
     android:touchscreenBlocksFocus="false">
 
+    <ImageView
+        android:id="@+id/i5"
+        android:layout_width="82dp"
+        android:layout_height="76dp"
+        tools:layout_editor_absoluteX="266dp"
+        tools:layout_editor_absoluteY="431dp"
+        tools:srcCompat="@color/design_default_color_background" />
+
     <Button
         android:id="@+id/b4"
         android:layout_width="18dp"
@@ -323,6 +331,70 @@
         app:layout_constraintStart_toEndOf="@+id/imageView4"
         app:layout_constraintTop_toBottomOf="@+id/Title"
         app:srcCompat="@drawable/team2" />
+
+    <ImageView
+        android:id="@+id/i0"
+        android:layout_width="82dp"
+        android:layout_height="76dp"
+        tools:layout_editor_absoluteX="66dp"
+        tools:layout_editor_absoluteY="332dp"
+        tools:srcCompat="@color/design_default_color_background" />
+
+    <ImageView
+        android:id="@+id/i3"
+        android:layout_width="82dp"
+        android:layout_height="76dp"
+        tools:layout_editor_absoluteX="66dp"
+        tools:layout_editor_absoluteY="430dp"
+        tools:srcCompat="@color/design_default_color_background" />
+
+    <ImageView
+        android:id="@+id/i6"
+        android:layout_width="82dp"
+        android:layout_height="76dp"
+        tools:layout_editor_absoluteX="66dp"
+        tools:layout_editor_absoluteY="527dp"
+        tools:srcCompat="@color/design_default_color_background" />
+
+    <ImageView
+        android:id="@+id/i4"
+        android:layout_width="82dp"
+        android:layout_height="76dp"
+        tools:layout_editor_absoluteX="166dp"
+        tools:layout_editor_absoluteY="431dp"
+        tools:srcCompat="@color/design_default_color_background" />
+
+    <ImageView
+        android:id="@+id/i7"
+        android:layout_width="82dp"
+        android:layout_height="76dp"
+        tools:layout_editor_absoluteX="166dp"
+        tools:layout_editor_absoluteY="529dp"
+        tools:srcCompat="@color/design_default_color_background" />
+
+    <ImageView
+        android:id="@+id/i8"
+        android:layout_width="82dp"
+        android:layout_height="76dp"
+        tools:layout_editor_absoluteX="267dp"
+        tools:layout_editor_absoluteY="529dp"
+        tools:srcCompat="@color/design_default_color_background" />
+
+    <ImageView
+        android:id="@+id/i1"
+        android:layout_width="82dp"
+        android:layout_height="76dp"
+        tools:layout_editor_absoluteX="166dp"
+        tools:layout_editor_absoluteY="332dp"
+        tools:srcCompat="@color/design_default_color_background" />
+
+    <ImageView
+        android:id="@+id/i2"
+        android:layout_width="82dp"
+        android:layout_height="76dp"
+        tools:layout_editor_absoluteX="267dp"
+        tools:layout_editor_absoluteY="332dp"
+        tools:srcCompat="@color/design_default_color_background" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
