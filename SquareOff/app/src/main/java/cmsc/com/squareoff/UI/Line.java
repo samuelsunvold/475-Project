@@ -3,6 +3,7 @@ package cmsc.com.squareoff.UI;
 
 import android.graphics.Color;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -11,6 +12,7 @@ public class Line {
     Button buttonLine;
     boolean isClicked = false;
     int clickedBy;
+    ArrayList<Square> squares;
 
     public Line(Button button)
     {
@@ -35,13 +37,14 @@ public class Line {
 
 class Square
 {
-    TextView square;
+    ImageView square;
     Line[] squareLines;
-    int completedBy;
+    boolean isSquareComplete = false;
     
-    public Square(Line[] lines)
+    public Square(Line[] lines, ImageView s)
     {
         squareLines = lines;
+        square = s;
     }
 
     public boolean checkSquare(Player p)
@@ -63,21 +66,16 @@ class Square
 
         if(squareComplete)
         {
+            isSquareComplete = true;
             if(p.number == 1)
             {
                 square.setBackgroundColor(Color.BLUE);
-                completedBy = 1;
             }
             else if(p.number == 2)
             {
                 square.setBackgroundColor(Color.RED);
-                completedBy = 2;
             }
-            return squareComplete;
         }
-        else
-        {
-            return squareComplete;
-        }
+        return squareComplete;
     }
 }
