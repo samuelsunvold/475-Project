@@ -157,9 +157,9 @@ public class so3x3 extends AppCompatActivity {
             boolean breakout = false;
             for (Square s:squares) {
                 for (Line line:s.squareLines) {
-                    if (line == l)
+                    if (line == l && s != null)
                     {
-                        l.squares.add(s);
+                        line.squares.add(s);
                         max--;
                     }
                     if (max == 0)

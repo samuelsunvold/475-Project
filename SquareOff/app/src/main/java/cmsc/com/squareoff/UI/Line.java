@@ -12,7 +12,7 @@ public class Line {
     Button buttonLine;
     boolean isClicked = false;
     int clickedBy;
-    ArrayList<Square> squares;
+    ArrayList<Square> squares = new ArrayList<Square>();
 
     public Line(Button button)
     {

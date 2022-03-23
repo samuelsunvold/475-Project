@@ -22,8 +22,10 @@
         android:layout_marginTop="214dp"
         android:layout_marginEnd="82dp"
         android:text="Button"
+        android:onClick="makeLine"
         app:layout_constraintEnd_toStartOf="@+id/b5"
         app:layout_constraintTop_toBottomOf="@+id/Title" />
+
 
     <Button
         android:id="@+id/b22"
@@ -33,6 +35,7 @@
         android:layout_marginTop="78dp"
         android:layout_marginBottom="30dp"
         android:text="Button"
+        android:onClick="makeLine"
         app:layout_constraintBottom_toTopOf="@+id/textView5"
         app:layout_constraintStart_toEndOf="@+id/b21"
         app:layout_constraintTop_toBottomOf="@+id/b15" />
@@ -45,6 +48,7 @@
         android:layout_marginTop="78dp"
         android:layout_marginEnd="63dp"
         android:text="Button"
+        android:onClick="makeLine"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/b15"
         app:layout_constraintTop_toBottomOf="@+id/b9" />
@@ -57,6 +61,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginBottom="50dp"
         android:text="Button"
+        android:onClick="makeLine"
         app:layout_constraintBottom_toTopOf="@+id/textView5"
         app:layout_constraintStart_toEndOf="@+id/b18"
         app:layout_constraintTop_toBottomOf="@+id/b12" />
@@ -68,6 +73,7 @@
         android:layout_marginStart="66dp"
         android:layout_marginTop="195dp"
         android:text="Button"
+        android:onClick="makeLine"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Title" />
 
@@ -78,6 +84,7 @@
         android:layout_marginStart="18dp"
         android:layout_marginTop="194dp"
         android:text="Button"
+        android:onClick="makeLine"
         app:layout_constraintStart_toEndOf="@+id/b0"
         app:layout_constraintTop_toBottomOf="@+id/Title" />
 
@@ -89,6 +96,7 @@
         android:layout_marginTop="330dp"
         android:layout_marginEnd="82dp"
         android:text="Button"
+        android:onClick="makeLine"
         app:layout_constraintEnd_toStartOf="@+id/b4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -101,6 +109,7 @@
         android:layout_marginTop="78dp"
         android:layout_marginEnd="63dp"
         android:text="Button"
+        android:onClick="makeLine"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/b8"
         app:layout_constraintTop_toBottomOf="@+id/b2" />
@@ -112,6 +121,7 @@
         android:layout_marginStart="18dp"
         android:layout_marginTop="78dp"
         android:text="Button"
+        android:onClick="makeLine"
         app:layout_constraintStart_toEndOf="@+id/b14"
         app:layout_constraintTop_toBottomOf="@+id/b8" />
 
@@ -123,6 +133,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="45dp"
         android:text="Button"
+        android:onClick="makeLine"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/b12"
         app:layout_constraintTop_toBottomOf="@+id/b6" />
@@ -134,6 +145,7 @@
         android:layout_marginStart="82dp"
         android:layout_marginTop="20dp"
         android:text="Button"
+        android:onClick="makeLine"
         app:layout_constraintStart_toEndOf="@+id/b11"
         app:layout_constraintTop_toBottomOf="@+id/b5" />
 
@@ -144,6 +156,7 @@
         android:layout_marginTop="214dp"
         android:layout_marginEnd="83dp"
         android:text="Button"
+        android:onClick="makeLine"
         app:layout_constraintEnd_toStartOf="@+id/b6"
         app:layout_constraintTop_toBottomOf="@+id/Title" />
 
@@ -154,6 +167,7 @@
         android:layout_marginStart="48dp"
         android:layout_marginTop="20dp"
         android:text="Button"
+        android:onClick="makeLine"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/b3" />
 
@@ -165,6 +179,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginBottom="50dp"
         android:text="Button"
+        android:onClick="makeLine"
         app:layout_constraintBottom_toTopOf="@+id/textView5"
         app:layout_constraintStart_toEndOf="@+id/b17"
         app:layout_constraintTop_toBottomOf="@+id/b11" />
@@ -176,6 +191,7 @@
         android:layout_marginStart="66dp"
         android:layout_marginTop="78dp"
         android:text="Button"
+        android:onClick="makeLine"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/b0" />
 
@@ -186,6 +202,7 @@
         android:layout_marginStart="82dp"
         android:layout_marginTop="20dp"
         android:text="Button"
+        android:onClick="makeLine"
         app:layout_constraintStart_toEndOf="@+id/b10"
         app:layout_constraintTop_toBottomOf="@+id/b4" />
 
@@ -198,6 +215,7 @@
         android:layout_marginEnd="45dp"
         android:layout_marginBottom="127dp"
         android:text="Button"
+        android:onClick="makeLine"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/b19"
@@ -210,6 +228,7 @@
         android:layout_marginStart="66dp"
         android:layout_marginTop="78dp"
         android:text="Button"
+        android:onClick="makeLine"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/b7" />
 
@@ -221,6 +240,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginBottom="127dp"
         android:text="Button"
+        android:onClick="makeLine"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/b10" />
@@ -232,6 +252,7 @@
         android:layout_marginTop="330dp"
         android:layout_marginEnd="45dp"
         android:text="Button"
+        android:onClick="makeLine"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -243,6 +264,7 @@
         android:layout_marginTop="195dp"
         android:layout_marginEnd="63dp"
         android:text="Button"
+        android:onClick="makeLine"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/b1"
         app:layout_constraintTop_toBottomOf="@+id/Title" />
@@ -256,6 +278,7 @@
         android:layout_marginEnd="63dp"
         android:layout_marginBottom="106dp"
         android:text="Button"
+        android:onClick="makeLine"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/b22"
@@ -268,6 +291,7 @@
         android:layout_marginStart="18dp"
         android:layout_marginTop="78dp"
         android:text="Button"
+        android:onClick="makeLine"
         app:layout_constraintStart_toEndOf="@+id/b7"
         app:layout_constraintTop_toBottomOf="@+id/b1" />
 
@@ -279,6 +303,7 @@
         android:layout_marginTop="78dp"
         android:layout_marginBottom="30dp"
         android:text="Button"
+        android:onClick="makeLine"
         app:layout_constraintBottom_toTopOf="@+id/textView5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/b14" />
