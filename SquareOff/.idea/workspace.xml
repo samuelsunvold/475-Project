@@ -19,15 +19,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="151789bc-1ee3-49a8-a356-4518382eb618" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../SquareUp/app/src/main/java/com/mrspd/squareoff/Ui/SettingsActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SquareUp/app/src/main/res/layout/activity_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SquareUp/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SquareUp/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SquareUp/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SquareUp/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SquareUp/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../SquareUp/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SquareUp/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SquareUp/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SquareUp/app/src/main/java/com/mrspd/squareoff/Ui/HomeActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../SquareUp/app/src/main/java/com/mrspd/squareoff/Ui/HomeActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SquareUp/app/src/main/res/layout/activity_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SquareUp/app/src/main/res/layout/activity_home.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SquareUp/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SquareUp/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SquareUp/app/src/main/java/com/mrspd/squareoff/Ui/SettingsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SquareUp/app/src/main/java/com/mrspd/squareoff/Ui/SettingsActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SquareUp/app/src/main/res/layout/activity_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SquareUp/app/src/main/res/layout/activity_settings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
