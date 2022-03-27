@@ -41,6 +41,11 @@ class HomeActivity : AppCompatActivity() {
             intent = Intent(applicationContext, ChooseGridActivity::class.java)
             startActivity(intent)
         }
+
+        settingsButton.setOnClickListener {
+            intent = Intent(applicationContext, SettingsActivity::class.java)
+            startActivity(intent)
+        }
 //        tutorial.setOnClickListener {
 //            intent = Intent(applicationContext, TutorialActivity::class.java)
 //            startActivity(intent)
