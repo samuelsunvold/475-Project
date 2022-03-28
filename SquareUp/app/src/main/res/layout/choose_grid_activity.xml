@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grid_background"
+    tools:context="com.mrspd.squareoff.Ui.ChooseGridActivity">
+
+    <ImageView
+            android:id="@+id/gridSize"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+            android:id="@+id/buttongrid3x3"
+            android:layout_width="match_parent"
+            android:layout_height="134dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/btn_3x3"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gridSize"
+            android:contentDescription="TODO"
+            app:layout_constraintHorizontal_bias="0.0" />
+
+    <ImageView
+            android:id="@+id/buttongrid4x4"
+            android:layout_width="wrap_content"
+
+            android:layout_height="160dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/btn_4x4"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttongrid3x3" />
+
+    <ImageView
+            android:id="@+id/buttongrid5x5"
+            android:layout_width="match_parent"
+            android:layout_height="134dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/btn_5x5"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttongrid4x4" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
