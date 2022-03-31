@@ -76,12 +76,7 @@ public class MusicService extends Service {
         return START_STICKY;
     }
 
-    /**
-     * Called by the system to notify a Service that it is no longer used and is being removed.  The
-     * service should clean up any resources it holds (threads, registered
-     * receivers, etc) at this point.  Upon return, there will be no more calls
-     * in to this Service object and it is effectively dead.  Do not call this method directly.
-     */
+
     public void stopmusic(){
         player.stop();
 
