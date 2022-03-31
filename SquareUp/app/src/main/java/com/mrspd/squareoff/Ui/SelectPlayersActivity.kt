@@ -42,8 +42,8 @@ class SelectPlayersActivity : AppCompatActivity() {
         var Hack = 0
         val profilelist = intArrayOf(R.drawable.team1,R.drawable.team3,R.drawable.team4,
             R.drawable.team5,R.drawable.team6,R.drawable.team7,R.drawable.team8,
-            R.drawable.team9, R.drawable.team10, R.drawable.team11, R.drawable.team12, R.drawable.team5,R.drawable.team6,R.drawable.team7,R.drawable.team8,
-            R.drawable.team9, R.drawable.team10, R.drawable.team11)
+            R.drawable.team9, R.drawable.team10, R.drawable.team1, R.drawable.team2, R.drawable.team5,R.drawable.team6,R.drawable.team7,R.drawable.team8,
+            R.drawable.team9, R.drawable.team10, R.drawable.team3)
 
         val bundle1 = intent.extras
         Mode = bundle1!!.getString("Mode").toString()
