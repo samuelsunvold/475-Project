@@ -30,6 +30,13 @@ class HomeActivity : AppCompatActivity() {
         window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN)
 
+        tutorial.setOnClickListener {
+            val intent = Intent(this, TutorialActivity::class.java)
+            // start your next activity
+            startActivity(intent)
+        }
+
+
 
         //////////////////////////////////////////////////
         Toasty.Config.getInstance()
@@ -59,16 +66,6 @@ class HomeActivity : AppCompatActivity() {
                 true;
             }
         }
-//        tutorial.setOnClickListener {
-//            intent = Intent(applicationContext, TutorialActivity::class.java)
-//            startActivity(intent)
-//
-//        }
-
-//        exit.setOnClickListener {
-//            finish()
-//            stopService(Intent(this, MusicService::class.java))
-//        }
 
 
 
