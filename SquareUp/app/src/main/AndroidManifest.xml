@@ -10,12 +10,16 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity
+                android:name=".Ui.TutorialActivity"
+                android:exported="false" />
         <activity android:name=".Ui.ResultActivity" />
         <activity android:name=".Ui.ChooseGridActivity" />
         <activity android:name=".Ui.HomeActivity" />
         <activity android:name=".Ui.SelectPlayersActivity" />
         <activity android:name=".Ui.GameActivity" />
-        <activity android:name=".Ui.SpalshScreenActivity"
+        <activity
+                android:name=".Ui.SpalshScreenActivity"
                 android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
