@@ -1,8 +1,11 @@
 
 package com.mrspd.squareoff.Models;
 
+import android.widget.ImageView;
+
 public class Warrior extends Player {
     private final Line[] inputBuffer = new Line[1];
+    public ImageView avatar;
 
     public Warrior(String name) {
         super(name);

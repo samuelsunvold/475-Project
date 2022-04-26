@@ -190,7 +190,9 @@ public class GameActivity extends AppCompatActivity implements PlayersStateView 
 
                 Intent intent = new Intent(GameActivity.this, ResultActivity.class);
                 bundle.putString("winnername", winner.getName());
+                bundle.putInt("winnerProfile", winner.);
                 intent.putExtras(bundle);
+
                 startActivity(intent);
                 finish();
 
