@@ -20,7 +20,7 @@ class ResultActivity : AppCompatActivity() {
         val bundle1 = intent.extras
        val winnername = bundle1!!.getString("winnername").toString()
 
-        tvWinner.text = "Winner is $winnername"
+        tvWinner.text = "Winner\n is \n$winnername"
         btHome.setOnClickListener {
             finish()
         }
