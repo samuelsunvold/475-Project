@@ -5,7 +5,7 @@
         android:layout_height="match_parent">
 
     <pl.droidsonroids.gif.GifImageView
-            android:id="@+id/gifview"
+            android:id="@+id/gifview1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/giffff"
