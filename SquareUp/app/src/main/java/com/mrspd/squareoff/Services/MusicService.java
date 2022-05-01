@@ -13,6 +13,7 @@ import com.mrspd.squareoff.R;
 
 public class MusicService extends Service {
     MediaPlayer player;
+    MediaPlayer buttonClick;
     /**
      * Return the communication channel to the service.  May return null if
      * clients can not bind to the service.  The returned

@@ -13,9 +13,13 @@ import id.voela.actrans.AcTrans
 import kotlinx.android.synthetic.main.activity_spalsh_screen.*
 
 
+
 class SpalshScreenActivity : AppCompatActivity() {
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
 
         setContentView(R.layout.activity_spalsh_screen)
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
