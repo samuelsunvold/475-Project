@@ -163,7 +163,6 @@ public class Game extends View implements Observer {
                     paint.setColor(Color.WHITE);
                 }
 
-
                 fillpath.reset();
                 fillpath.addRect(start + add5 * i, start + add5 * j
                         + add1, start + add5 * i + add1, start + add5

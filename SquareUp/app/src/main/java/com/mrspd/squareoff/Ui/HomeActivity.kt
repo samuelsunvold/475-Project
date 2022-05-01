@@ -66,10 +66,6 @@ class HomeActivity : AppCompatActivity() {
                 true;
             }
         }
-
-
-
-
     }
 
     private fun getFormattedMessage(): CharSequence? {

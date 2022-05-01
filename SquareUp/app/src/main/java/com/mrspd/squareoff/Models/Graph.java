@@ -78,8 +78,7 @@ public class Graph extends Observable {
         boolean newBoxOccupied = OccupyBox(move);
         setLineOccupied(move);
         latestLine = move;
-        if (!newBoxOccupied)
-            toNextPlayer();
+        toNextPlayer();
     }
 
     public Player currentPlayer() {
