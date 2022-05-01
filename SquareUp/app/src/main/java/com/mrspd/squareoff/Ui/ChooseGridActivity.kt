@@ -1,6 +1,7 @@
 package com.mrspd.squareoff.Ui
 
 import android.content.Intent
+import android.media.MediaPlayer
 import android.os.Bundle
 import android.view.View
 import android.view.WindowManager
@@ -9,9 +10,12 @@ import com.mrspd.squareoff.R
 import kotlinx.android.synthetic.main.choose_grid_activity.*
 
 class ChooseGridActivity : AppCompatActivity() {
+    private lateinit var mediaPlayer: MediaPlayer
     val bundle: Bundle = Bundle()
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
+        mediaPlayer = MediaPlayer.create(this, R.raw. mystery_alert)
         setContentView(R.layout.choose_grid_activity)
 
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
@@ -34,15 +38,18 @@ class ChooseGridActivity : AppCompatActivity() {
 
             buttongrid3x3.setOnClickListener {
                 gridsize = "3"
+                mediaPlayer.start()
                 goToNextActivity(gridsize, mode)
             }
             buttongrid4x4.setOnClickListener {
                 gridsize = "4"
+                mediaPlayer.start()
                 goToNextActivity(gridsize, mode)
 
             }
             buttongrid5x5.setOnClickListener {
                 gridsize = "5"
+                mediaPlayer.start()
                 goToNextActivity(gridsize, mode)
 
             }

@@ -10,6 +10,7 @@ import android.text.SpannableStringBuilder
 import android.text.style.StyleSpan
 import android.view.View
 import android.view.WindowManager
+import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import com.mrspd.squareoff.R
 import com.mrspd.squareoff.Services.MusicService
@@ -21,16 +22,21 @@ import kotlinx.android.synthetic.main.activity_home.*
 class HomeActivity : AppCompatActivity() {
 
     var isMusicMuted: Boolean = false;
+    private lateinit var mediaPlayer: MediaPlayer
 
     @SuppressLint("CheckResult", "ResourceAsColor")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        mediaPlayer = MediaPlayer.create(this, R.raw. mystery_alert)
         setContentView(R.layout.activity_home)
 
         window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN)
 
         tutorial.setOnClickListener {
+
+
+            mediaPlayer.start()
             val intent = Intent(this, TutorialActivity::class.java)
             // start your next activity
             startActivity(intent)
@@ -49,6 +55,8 @@ class HomeActivity : AppCompatActivity() {
         //////////////////////////////////////////////////
 
         start.setOnClickListener {
+
+            mediaPlayer.start()
             intent = Intent(applicationContext, ChooseGridActivity::class.java)
             startActivity(intent)
         }
