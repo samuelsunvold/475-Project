@@ -36,24 +36,30 @@ class ChooseGridActivity : AppCompatActivity() {
            // igsolo.visibility = View.GONE
            // igmultiplayer.visibility = View.GONE
 
-            buttongrid3x3.setOnClickListener {
-                gridsize = "3"
-                mediaPlayer.start()
-                goToNextActivity(gridsize, mode)
-            }
-            buttongrid4x4.setOnClickListener {
-                gridsize = "4"
-                mediaPlayer.start()
-                goToNextActivity(gridsize, mode)
+        val intent: Intent = getIntent()
+        val isMusicMuted = intent.getBooleanExtra("musicIsMuted", false)
 
-            }
-            buttongrid5x5.setOnClickListener {
-                gridsize = "5"
+        buttongrid3x3.setOnClickListener {
+            gridsize = "3"
+            if(!isMusicMuted) {
                 mediaPlayer.start()
-                goToNextActivity(gridsize, mode)
-
             }
-      //  }
+            goToNextActivity(gridsize, mode)
+        }
+        buttongrid4x4.setOnClickListener {
+            gridsize = "4"
+            if(!isMusicMuted) {
+                mediaPlayer.start()
+            }
+            goToNextActivity(gridsize, mode)
+        }
+        buttongrid5x5.setOnClickListener {
+            gridsize = "5"
+            if(!isMusicMuted) {
+                mediaPlayer.start()
+            }
+            goToNextActivity(gridsize, mode)
+        }
     }
 
     private fun goToNextActivity(gridsize: String, mode: String) {

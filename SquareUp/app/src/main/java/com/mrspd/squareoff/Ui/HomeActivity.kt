@@ -16,6 +16,7 @@ import com.mrspd.squareoff.R
 import com.mrspd.squareoff.Services.MusicService
 import es.dmoral.toasty.Toasty
 import kotlinx.android.synthetic.main.activity_home.*
+import kotlin.math.log
 
 
 @Suppress("DEPRECATION")
@@ -28,21 +29,11 @@ class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         mediaPlayer = MediaPlayer.create(this, R.raw. mystery_alert)
+        mediaPlayer.start()
         setContentView(R.layout.activity_home)
 
         window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN)
-
-        tutorial.setOnClickListener {
-
-
-            mediaPlayer.start()
-            val intent = Intent(this, TutorialActivity::class.java)
-            // start your next activity
-            startActivity(intent)
-        }
-
-
 
         //////////////////////////////////////////////////
         Toasty.Config.getInstance()
@@ -53,13 +44,6 @@ class HomeActivity : AppCompatActivity() {
                 R.color.highlight1, R.color.green, Toasty.LENGTH_SHORT, false, true).show()
         Toasty.Config.reset()
         //////////////////////////////////////////////////
-
-        start.setOnClickListener {
-
-            mediaPlayer.start()
-            intent = Intent(applicationContext, ChooseGridActivity::class.java)
-            startActivity(intent)
-        }
 
         musicIcon.setOnClickListener {
             val musicServiceIntent = Intent(applicationContext, MusicService::class.java)
@@ -73,6 +57,37 @@ class HomeActivity : AppCompatActivity() {
                 musicIcon.setImageResource(R.drawable.muted_music_icon)
                 true;
             }
+
+            if(isMusicMuted) {
+                mediaPlayer.stop()
+            }
+            else {
+                mediaPlayer.start()
+            }
+        }
+
+        start.setOnClickListener {
+            intent = Intent(applicationContext, ChooseGridActivity::class.java)
+            intent.putExtra("musicIsMuted", isMusicMuted)
+            startActivity(intent)
+        }
+
+        tutorial.setOnClickListener {
+            val intent = Intent(this, TutorialActivity::class.java)
+            intent.putExtra("musicIsMuted", isMusicMuted)
+            // start your next activity
+            startActivity(intent)
+        }
+    }
+
+    override fun onResume() {
+        super.onResume()
+
+        if(isMusicMuted) {
+            mediaPlayer.start()
+        }
+        else {
+            mediaPlayer.stop()
         }
     }
 
